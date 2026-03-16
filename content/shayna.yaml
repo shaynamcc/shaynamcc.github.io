@@ -1,0 +1,20 @@
+# ============================================================
+# content/shayna.yaml
+# ============================================================
+
+name: "Shayna McConville"
+tagline: "Aspiring Data Scientist | Senior in Computational Data Science | Michigan State University"
+
+about: |
+  I’m a senior at Michigan State University studying Computational Data Science,
+  with experience using data to solve real operational and business problems.
+  Through coursework and projects, I’ve built end-to-end workflows using SQL,
+  Python, and machine learning to clean, analyze, and visualize data. I also
+  completed an AI implementation internship with GE Aerospace, where I helped
+  develop dashboards and AI chatbots (using Text-to-SQL and RAG technology) to
+  improve reporting and decision-making.
+
+# Contact information — remove any fields you prefer not to share
+email: "mcconv15@msu.edu"
+linkedin: "https://www.linkedin.com/in/shayna-mcconville"
+github: "https://github.com/shaynamcc"
