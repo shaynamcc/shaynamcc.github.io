@@ -17,7 +17,7 @@
   <header class="site-header">
     <div class="header-inner">
       <div class="header-name">Shayna McConville</div>
-      <div class="header-tagline">Aspiring Data Scientist | Senior in Computational Data Science | Michigan State University</div>
+      <div class="header-tagline">Incoming DTLP @ GE Aerospace | Senior in Computational Data Science | Michigan State University</div>
     </div>
 
     <!-- Navigation bar -->
@@ -55,17 +55,17 @@ improve reporting and decision-making.</p></div>
       <!-- Project thumbnail image -->
       <div class="project-image-wrapper">
         <img
-          src="img/placeholder_project_1.png"
-          alt="Thumbnail for Optimal Nap Spot Prediction Across Campus"
+          src="img/sales-clip-art-icon-vector.jpg"
+          alt="Thumbnail for Fully Reproducible Sales Data Analysis"
           class="project-image"
         />
       </div>
 
       <div class="project-body">
-        <h3 class="project-title">Optimal Nap Spot Prediction Across Campus</h3>
+        <h3 class="project-title">Fully Reproducible Sales Data Analysis</h3>
 
         <!-- Short summary written for a non-expert audience -->
-        <p class="project-summary">Built a model to identify the best nap locations on MSU&#39;s campus based on sunlight exposure, foot traffic, grass quality, and proximity to food smells. Findings have been peer-reviewed by three other dogs and were described as &#34;life-changing&#34; and &#34;very good.&#34;
+        <p class="project-summary">This project provides summaries and visualizations for January sales data. Using customer lookup information and transaction records, the analysis  produces a CSV file with region + category breakdowns for sales, and a bar chart showing total revenue by region. This repository is organized with separater folders for data, scripts, and results to make it easy to  navigate and reproduce. :)
 </p>
 
         <!-- Tech stack as pill badges -->
@@ -73,13 +73,15 @@ improve reporting and decision-making.</p></div>
           
           <span class="tech-badge">Python</span>
           
-          <span class="tech-badge">scikit-learn</span>
-          
           <span class="tech-badge">pandas</span>
+          
+          <span class="tech-badge">plotly</span>
           
           <span class="tech-badge">matplotlib</span>
           
-          <span class="tech-badge">Jupyter Notebooks</span>
+          <span class="tech-badge">Docker</span>
+          
+          <span class="tech-badge">Conda</span>
           
         </div>
 
@@ -89,19 +91,19 @@ improve reporting and decision-making.</p></div>
 
           <div class="detail-block">
             <h4>Problem</h4>
-            <p>Finding a good nap spot is harder than it looks. Campus is large, conditions change throughout the day, and the best patches of sun move. A mascot operating on intuition alone wastes valuable resting time — a problem that affects productivity, morale, and tail-wagging rates across the entire campus community.
+            <p>Raw sales data is often fragmented across multiple CSV files (transactions, customer lookups,  and weather records), making it difficult for stakeholders to quickly assess regional  performance. Without a reproducible pipeline, manual data cleaning and visualization  lead to inconsistencies and delayed reporting.
 </p>
           </div>
 
           <div class="detail-block">
             <h4>Approach</h4>
-            <p>Collected location data across 47 candidate nap sites over a full academic semester. Features included average daily sunlight (hours), grass softness score (1–10, assessed manually), nearby food-cart proximity, and pedestrian traffic by hour. Trained a gradient boosting classifier to predict a site&#39;s &#34;nap quality&#34; rating and used SHAP values to explain which features mattered most.
+            <p>Developed a modular Python pipeline that merges transaction logs with customer regional data.  The data is cleaned and aggregated using pandas to calculate metrics like total units,  total revenue, and average revenue per order. To ensure portability, the project was  containerized using Docker and supports multiple environment setups (venv and Conda).  An interactive Plotly visualization was added to allow users to zoom and inspect  specific regional data points.
 </p>
           </div>
 
           <div class="detail-block">
             <h4>Results &amp; Impact</h4>
-            <p>The model achieved 89% accuracy on held-out test sites. Sunlight duration and grass softness were the top two predictive features, while proximity to the student union food court provided a meaningful but secondary boost. A ranked list of top-10 nap sites was distributed to the campus dog community and has since been downloaded 847 times.
+            <p>The pipeline successfully automates the generation of a 12-row summary report and multiple  visualizations. By transitioning from static images to interactive Plotly charts,  users gained the ability to hover for exact revenue values and zoom into specific regions,  significantly improving data accessibility. The Docker integration ensures the analysis  runs identically across Windows, Mac, and Linux environments.
 </p>
           </div>
         </details>
@@ -109,12 +111,12 @@ improve reporting and decision-making.</p></div>
         <!-- Links to the GitHub repo and notebook -->
         <div class="project-links">
           
-          <a href="https://github.com/zeke-wonder-dog/nap-spot-predictor" target="_blank" rel="noopener" class="btn btn-repo">
+          <a href="https://github.com/shaynamcc/hw01-mcconv15.git" target="_blank" rel="noopener" class="btn btn-repo">
             View Repo
           </a>
           
           
-          <a href="https://github.com/zeke-wonder-dog/nap-spot-predictor/blob/main/analysis.ipynb" target="_blank" rel="noopener" class="btn btn-notebook">
+          <a href="https://github.com/shaynamcc/hw01-mcconv15.git/blob/main/scripts/analysis.py" target="_blank" rel="noopener" class="btn btn-notebook">
             View Notebook
           </a>
           
@@ -128,17 +130,17 @@ improve reporting and decision-making.</p></div>
       <!-- Project thumbnail image -->
       <div class="project-image-wrapper">
         <img
-          src="img/placeholder_project_2.png"
-          alt="Thumbnail for Spartan Football Crowd Cheer Analysis"
+          src="img/nyc_img.png"
+          alt="Thumbnail for NYC 311 Service Request Analysis on AWS"
           class="project-image"
         />
       </div>
 
       <div class="project-body">
-        <h3 class="project-title">Spartan Football Crowd Cheer Analysis</h3>
+        <h3 class="project-title">NYC 311 Service Request Analysis on AWS</h3>
 
         <!-- Short summary written for a non-expert audience -->
-        <p class="project-summary">Analyzed audio and attendance data from Spartan Stadium to understand what game events drive the loudest crowd reactions. Results were used to help the athletics department optimize in-game entertainment and — personally — to determine the exact moments when I should run onto the field for maximum dramatic effect.
+        <p class="project-summary">This project analyzes around 200,000 NYC 311 service requests and builds a  predictive model to forecast complaint resolution times across agencies and boroughs.  Using AWS cloud infrastructure (S3, SageMaker) and machine learning (Linear Learner),  the project processes large-scale complaint data, performs exploratory analysis, and  develops a regression model. The work demonstrates end-to-end cloud data engineering  with stakeholder-focused predictive insights.
 </p>
 
         <!-- Tech stack as pill badges -->
@@ -148,11 +150,17 @@ improve reporting and decision-making.</p></div>
           
           <span class="tech-badge">pandas</span>
           
-          <span class="tech-badge">seaborn</span>
+          <span class="tech-badge">Jupyter Notebooks</span>
+          
+          <span class="tech-badge">AWS (S3, SageMaker, Linear Learner)</span>
+          
+          <span class="tech-badge">SQL</span>
           
           <span class="tech-badge">Plotly</span>
           
-          <span class="tech-badge">Jupyter Notebooks</span>
+          <span class="tech-badge">scikit-learn</span>
+          
+          <span class="tech-badge">Git/GitHub</span>
           
         </div>
 
@@ -162,19 +170,19 @@ improve reporting and decision-making.</p></div>
 
           <div class="detail-block">
             <h4>Problem</h4>
-            <p>Fan energy is contagious, but it is also unpredictable. The athletics department wanted to know which in-game events (touchdowns, turnovers, big defensive stops, walk-up music choices) produced the biggest crowd reactions — and whether the pattern differed by opponent, weather, or game time. As the mascot, I had strong professional interest in this question.
+            <p>NYC 311 complaint data spans millions of requests across multiple agencies and boroughs.  City planners need to predict how long it will take to resolve a ticket and identify  which complaint types take longest to resolve, enabling better resource allocation. 
 </p>
           </div>
 
           <div class="detail-block">
             <h4>Approach</h4>
-            <p>Combined play-by-play game data with decibel readings from stadium microphones across three seasons (~36 home games). Engineered features for score differential, down-and-distance, quarter, temperature, and opponent rank. Produced interactive Plotly dashboards that let non-technical staff filter by season and event type to explore crowd response patterns on their own.
+            <p>Developed an end-to-end ML pipeline using AWS SageMaker&#39;s Linear Learner algorithm to  predict complaint resolution times. Data ingestion included loading 200k complaints from  S3, parsing string dates, handling missing ZIP codes and resolution descriptions, and  feature engineering (complaint type, borough, agency, creation date). Exploratory data  analysis revealed complaint distributions and temporal patterns. The Linear Learner model  was trained/evaluated on engineered features to predict resolution duration, with confusion  matrix analysis to assess prediction accuracy across complaint categories.
 </p>
           </div>
 
           <div class="detail-block">
             <h4>Results &amp; Impact</h4>
-            <p>Defensive turnovers produced the loudest average crowd response — louder even than touchdowns — especially when MSU was trailing. Walk-up music selections in the 3rd quarter showed a statistically significant effect on cheer volume for games decided by fewer than 10 points. The athletics team used these findings to redesign the third-quarter entertainment package for the following season. I was given extra treats for my contributions.
+            <p>Successfully deployed a predictive model that forecasts resolution times for NYC 311  complaints with measurable accuracy. Model insights identify high-volume complaint types  and agencies with longer resolution windows. Stakeholder question 3 analysis validates  model performance and provides actionable recommendations for prioritizing complaint categories.  The cloud-based approach enables retraining on new data and integration with city services.
 </p>
           </div>
         </details>
@@ -182,12 +190,89 @@ improve reporting and decision-making.</p></div>
         <!-- Links to the GitHub repo and notebook -->
         <div class="project-links">
           
-          <a href="https://github.com/zeke-wonder-dog/spartan-cheer-analysis" target="_blank" rel="noopener" class="btn btn-repo">
+          <a href="https://github.com/shaynamcc/aws-nyc311-mcconv15.git" target="_blank" rel="noopener" class="btn btn-repo">
             View Repo
           </a>
           
           
-          <a href="https://github.com/zeke-wonder-dog/spartan-cheer-analysis/blob/main/cheer_analysis.ipynb" target="_blank" rel="noopener" class="btn btn-notebook">
+          <a href="https://github.com/shaynamcc/aws-nyc311-mcconv15/tree/main/notebooks" target="_blank" rel="noopener" class="btn btn-notebook">
+            View Notebook
+          </a>
+          
+        </div>
+      </div>
+
+    </article>
+    
+    <article class="project-card">
+
+      <!-- Project thumbnail image -->
+      <div class="project-image-wrapper">
+        <img
+          src="img/countries_img.jpg"
+          alt="Thumbnail for Sakila DB Revenue Analysis by Country"
+          class="project-image"
+        />
+      </div>
+
+      <div class="project-body">
+        <h3 class="project-title">Sakila DB Revenue Analysis by Country</h3>
+
+        <!-- Short summary written for a non-expert audience -->
+        <p class="project-summary">This project analyzes rental revenue by country using the Sakila rental database,  answering the key question: &#34;Which countries generate the highest rental revenue  and how should resources be allocated?&#34; The analysis demonstrates advanced SQL  techniques including joins, aggregate queries, CTEs, and window functions to  provide data-driven insights for resource allocation in a rental business context.
+</p>
+
+        <!-- Tech stack as pill badges -->
+        <div class="tech-stack">
+          
+          <span class="tech-badge">SQL</span>
+          
+          <span class="tech-badge">MySQL</span>
+          
+          <span class="tech-badge">Docker</span>
+          
+          <span class="tech-badge">Docker Compose</span>
+          
+          <span class="tech-badge">Jupyter Notebooks</span>
+          
+          <span class="tech-badge">Adminer (Database GUI)</span>
+          
+          <span class="tech-badge">Git/GitHub</span>
+          
+        </div>
+
+        <!-- Collapsible details (problem / approach / results) -->
+        <details class="project-details">
+          <summary>More details</summary>
+
+          <div class="detail-block">
+            <h4>Problem</h4>
+            <p>A rental business using the Sakila database needs to understand which countries  generate the highest rental revenue to optimize resource allocation. Without  proper analysis, resources might be inefficiently distributed across global markets.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Approach</h4>
+            <p>Set up a local MySQL database using Docker Compose with the Sakila sample database.  Performed comprehensive SQL analysis including complex joins to connect rental,  payment, customer, and address tables; used aggregate functions with GROUP BY and  HAVING clauses to calculate revenue by country; implemented CTEs for modular query  structure; applied window functions (RANK, percent of total) for comparative analysis;  and utilized EXPLAIN for query optimization. The analysis identifies top revenue-generating  countries and provides allocation recommendations.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Results &amp; Impact</h4>
+            <p>Successfully identified countries with highest rental revenue and provided clear  recommendations for resource allocation. The analysis demonstrates proficiency in  advanced SQL techniques and database query optimization. Stakeholders can now make  informed decisions about market focus and resource distribution based on empirical  data from the Sakila rental database.
+</p>
+          </div>
+        </details>
+
+        <!-- Links to the GitHub repo and notebook -->
+        <div class="project-links">
+          
+          <a href="https://github.com/shaynamcc/cmse492-hw02-mcconv15.git" target="_blank" rel="noopener" class="btn btn-repo">
+            View Repo
+          </a>
+          
+          
+          <a href="https://github.com/shaynamcc/cmse492-hw02-mcconv15/HW02-Shayna_McConville.ipynb" target="_blank" rel="noopener" class="btn btn-notebook">
             View Notebook
           </a>
           

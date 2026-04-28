@@ -1,0 +1,42 @@
+title: "Sakila DB Revenue Analysis by Country"
+
+short_summary: >
+  This project analyzes rental revenue by country using the Sakila rental database, 
+  answering the key question: "Which countries generate the highest rental revenue 
+  and how should resources be allocated?" The analysis demonstrates advanced SQL 
+  techniques including joins, aggregate queries, CTEs, and window functions to 
+  provide data-driven insights for resource allocation in a rental business context.
+
+tech_stack:
+  - SQL
+  - MySQL
+  - Docker
+  - Docker Compose
+  - Jupyter Notebooks
+  - Adminer (Database GUI)
+  - Git/GitHub
+
+problem_statement: >
+  A rental business using the Sakila database needs to understand which countries 
+  generate the highest rental revenue to optimize resource allocation. Without 
+  proper analysis, resources might be inefficiently distributed across global markets.
+
+approach: >
+  Set up a local MySQL database using Docker Compose with the Sakila sample database. 
+  Performed comprehensive SQL analysis including complex joins to connect rental, 
+  payment, customer, and address tables; used aggregate functions with GROUP BY and 
+  HAVING clauses to calculate revenue by country; implemented CTEs for modular query 
+  structure; applied window functions (RANK, percent of total) for comparative analysis; 
+  and utilized EXPLAIN for query optimization. The analysis identifies top revenue-generating 
+  countries and provides allocation recommendations.
+
+results_impact: >
+  Successfully identified countries with highest rental revenue and provided clear 
+  recommendations for resource allocation. The analysis demonstrates proficiency in 
+  advanced SQL techniques and database query optimization. Stakeholders can now make 
+  informed decisions about market focus and resource distribution based on empirical 
+  data from the Sakila rental database.
+
+repo_url: "https://github.com/shaynamcc/cmse492-hw02-mcconv15.git"
+notebook_url: "https://github.com/shaynamcc/cmse492-hw02-mcconv15/HW02-Shayna_McConville.ipynb"
+image_path: "img/countries_img.jpg"

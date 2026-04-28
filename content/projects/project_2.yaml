@@ -1,47 +1,44 @@
-# ============================================================
-# content/projects/example_project_1.yaml
-# ============================================================
-# Example project: Predicting the Best Nap Spots on Campus
-# Copy this file to create your own project entries.
-# ============================================================
-
-title: "Optimal Nap Spot Prediction Across Campus"
+title: "NYC 311 Service Request Analysis on AWS"
 
 short_summary: >
-  Built a model to identify the best nap locations on MSU's campus based
-  on sunlight exposure, foot traffic, grass quality, and proximity to
-  food smells. Findings have been peer-reviewed by three other dogs and
-  were described as "life-changing" and "very good."
+  This project analyzes around 200,000 NYC 311 service requests and builds a 
+  predictive model to forecast complaint resolution times across agencies and boroughs. 
+  Using AWS cloud infrastructure (S3, SageMaker) and machine learning (Linear Learner), 
+  the project processes large-scale complaint data, performs exploratory analysis, and 
+  develops a regression model. The work demonstrates end-to-end cloud data engineering 
+  with stakeholder-focused predictive insights.
 
 tech_stack:
   - Python
-  - scikit-learn
   - pandas
-  - matplotlib
   - Jupyter Notebooks
+  - AWS (S3, SageMaker, Linear Learner)
+  - SQL
+  - Plotly
+  - scikit-learn
+  - Git/GitHub
 
 problem_statement: >
-  Finding a good nap spot is harder than it looks. Campus is large,
-  conditions change throughout the day, and the best patches of sun
-  move. A mascot operating on intuition alone wastes valuable resting
-  time — a problem that affects productivity, morale, and tail-wagging
-  rates across the entire campus community.
+  NYC 311 complaint data spans millions of requests across multiple agencies and boroughs. 
+  City planners need to predict how long it will take to resolve a ticket and identify 
+  which complaint types take longest to resolve, enabling better resource allocation. 
 
 approach: >
-  Collected location data across 47 candidate nap sites over a full
-  academic semester. Features included average daily sunlight (hours),
-  grass softness score (1–10, assessed manually), nearby food-cart
-  proximity, and pedestrian traffic by hour. Trained a gradient boosting
-  classifier to predict a site's "nap quality" rating and used SHAP
-  values to explain which features mattered most.
+  Developed an end-to-end ML pipeline using AWS SageMaker's Linear Learner algorithm to 
+  predict complaint resolution times. Data ingestion included loading 200k complaints from 
+  S3, parsing string dates, handling missing ZIP codes and resolution descriptions, and 
+  feature engineering (complaint type, borough, agency, creation date). Exploratory data 
+  analysis revealed complaint distributions and temporal patterns. The Linear Learner model 
+  was trained/evaluated on engineered features to predict resolution duration, with confusion 
+  matrix analysis to assess prediction accuracy across complaint categories.
 
 results_impact: >
-  The model achieved 89% accuracy on held-out test sites. Sunlight
-  duration and grass softness were the top two predictive features,
-  while proximity to the student union food court provided a meaningful
-  but secondary boost. A ranked list of top-10 nap sites was distributed
-  to the campus dog community and has since been downloaded 847 times.
+  Successfully deployed a predictive model that forecasts resolution times for NYC 311 
+  complaints with measurable accuracy. Model insights identify high-volume complaint types 
+  and agencies with longer resolution windows. Stakeholder question 3 analysis validates 
+  model performance and provides actionable recommendations for prioritizing complaint categories. 
+  The cloud-based approach enables retraining on new data and integration with city services.
 
-repo_url: "https://github.com/zeke-wonder-dog/nap-spot-predictor"
-notebook_url: "https://github.com/zeke-wonder-dog/nap-spot-predictor/blob/main/analysis.ipynb"
-image_path: "img/placeholder_project_1.png"
+repo_url: "https://github.com/shaynamcc/aws-nyc311-mcconv15.git"
+notebook_url: "https://github.com/shaynamcc/aws-nyc311-mcconv15/tree/main/notebooks"
+image_path: "img/nyc_img.png"
